@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merve Köseoğlu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carouse   l/1.8.1/slick-theme.min.css" />
+    
+    <header>
+        
+        <div class="logo"><img src="img/logo-black.png" alt=""></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <button id="login">login</button>
+        </div>
+    
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</head>
+    <div class="need shop">
+        <div class="container">
+            <div class="filter">
+                <h1 class="title">What do you need?</h1>
+            <select id="needselect">
+                <option value="sneakers">Sneakers</option>
+                <option value="boots">Boots</option>
+                <option value="sandals">Sandals</option>
+              </select>
+              <button class="need_button" onclick="showSelectedneed()">This</button>
+            </div>
+            <div class="need_product">
+                <div class="product-card" id="sneakers">
+                    <div class="card-image">
+                        <img src="img/1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="title">Sneakers</p>
+                        <p class="content">Get moving with your new favorite Sneakers model.</p>
+                        <div class="price">
+                            <p>1900TL</p>
+                            <a class="view">View</a>
+                        </div>
+                    </div>
+                    
+                  </div>
+                  <div class="product-card" id="boots">
+                    <div class="card-image">
+                        <img src="img/2.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="title">Boots</p>
+                        <p class="content">Get moving with your new favorite Boots model.</p>
+                        <div class="price">
+                            <p>1900TL</p>
+                            <a class="view">View</a>
+                        </div>
+                    </div>
+                  </div>                  
+                  <div class="product-card" id="sandals">
+                    <div class="card-image">
+                        <img src="img/3.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="title">Sandals</p>
+                        <p class="content">Get moving with your new favorite Sandals model.</p>
+                        <div class="price">
+                            <p>1900TL</p>
+                            <a class="view">View</a>
+                        </div>
+                    </div>
+                  </div>
+            </div>              
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            MerShoes
+        </div>
+        <div class="menu">
+            <ul>
+                <a><li>Home</li></a>
+                <a><li>Shop</li></a>
+                <a><li>Contact</li></a>
+            </ul>
+        </div>
+        <div class="copyright">Copyright 2024</div>
+    </footer>
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+    
+
+                <input type="password" id="password" name="password" placeholder="Password" required>
+    
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

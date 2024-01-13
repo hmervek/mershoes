@@ -1,0 +1,388 @@
+
+.banner img {
+    width: 70%;
+    margin: auto;
+}
+.banner h1.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner {
+    background-color: #ececec;
+    padding: 100px 0 50px;
+}
+.need_product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product-card {
+    width: 33%;
+}
+.card-image img {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+.product-card {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    color: #4a4a4a;
+    max-width: 100%;
+    position: relative;
+    width: 31%;
+    margin: 10px;
+    padding: 30px;
+}
+.need {
+    margin: 30px;
+}
+.view {
+    display: block;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 5px 0;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.view:hover{
+    color: white;
+}
+.price p, .price {
+    font-size: 20px;
+    font-weight: 500;
+}
+.price{
+    font-weight: bold ;
+    margin: 20px 0;
+}
+select#needselect {
+    width: 10%;
+    height: 40px;
+    padding: 0 10px;
+}
+button.need_button {
+    height: 40px;
+    width: 10%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+.logo img {
+    width: 20%;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+}
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    z-index: 1001;
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+header button {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #7e7e7e;
+}
+.copyright {
+    border-top: 1px solid #929292;
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+}
+footer .logo {
+    margin: 50px 0;
+    color: white;
+}
+footer .menu a {
+    color: white;
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu.open .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.hamburger-menu.open .menu ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #7e7e7e;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 20%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form input {
+    width: 90%;
+    height: 40px;
+    padding: 0 10px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+form button {
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+marquee {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+}
+marquee span {
+    margin-left: 500px;
+}
+.shop{
+    margin-top: 130px;
+}
+.contact-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+.contact-icon img {
+    width: 30px;
+}
+.contact {
+    margin-top: 130px;
+}
+.size_box {
+    width: 10%;
+    min-width: 50px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    padding: 0 4px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    color: #000;
+    font-weight: 400;
+    margin-right: 9px;
+}
+.shoes_number {
+    margin: 20px 0;
+    display: flex;
+}
+span.size_box.this {
+    background-color: black;
+    color: white;
+}
+button.buy {
+    display: block;
+    width: 56%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+}
+.product{
+    margin-top: 130px;
+}
+.faq-container {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.faq-question {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.faq-answer {
+    display: none;
+    padding: 10px;
+    margin: -10px 0;
+    border-top: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0px 5px 5px;
+}
+@media screen and (max-width: 768px) {
+    .columns {
+        margin: 0;
+        
+    }
+    .logo {
+        width: 25%;
+    }
+    .logo img {
+        width: 50%;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 20px;
+        width: 100%;
+        align-items: center;
+        background-color: white;
+        z-index: 1001;
+    }
+    .menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .menu ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu.open + .menu ul {
+        display: block;
+    }
+    .product-card {
+        background-color: #fff;
+        border-radius: 0.25rem;
+        box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+        color: #4a4a4a;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        margin: auto;
+        padding: 30px;
+        margin-top: 20px;
+    }
+    select#needselect {
+        width: 50%;
+        height: 40px;
+        padding: 0 10px;
+        margin-top: 20px;
+        border: 1px solid;
+    }
+    button.need_button {
+        height: 40px;
+        width: 48%;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+}
